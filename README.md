@@ -15,5 +15,5 @@ You are expected to do the following in 3 hours or less and you may use any reso
   <li>Evaluate the MIMO models and the ensembles and compare their performance on metrics such as mean-squared error (MSE), Pearson correlation, Spearman Rho, and diversity (which can be measured by looking at residual correlations).</li>
   <li>Create visuals such as plots and tables to present your findings. You can put them in the README or in a slide show on Google Drive.</li>
   <li>(Optional) Implement tests for your modeling code.</li>
-  <li>(Optional) Use [importchecker](https://pypi.org/project/importchecker/) and [black formatter](https://black.readthedocs.io/en/stable/) to clean up your code.</li>
+  <li>(Optional) Use importchecker (https://pypi.org/project/importchecker/) and black formatter (https://black.readthedocs.io/en/stable/) to clean up your code.</li>
 </ul>
