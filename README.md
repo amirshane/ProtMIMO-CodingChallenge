@@ -9,7 +9,7 @@ Some boilerplate code is provided, especially in `ProtMIMO/data_utils.py` which 
 
 You are expected to do the following in 3 hours or less and you may use any resource available to you (except asking someone else for help or finding an existing solution):
 <ul>
-  <li>Implement a MIMO model in along with helper modules. We recommend using a MIMO MLP and/or a MIMO CNN (preferably both).</li>
+  <li>Implement a MIMO model along with helper modules. We recommend using a MIMO MLP and/or a MIMO CNN (preferably both).</li>
   <li>Implement dataloaders that enable you to train and evaluate the MIMO models.</li>
   <li>Train the MIMO models along with a traditional ensemble of regression models to compare to.</li>
   <li>Evaluate the MIMO models and the ensembles and compare their performance on metrics such as mean-squared error (MSE), Pearson correlation, Spearman Rho, and diversity (which can be measured by looking at residual correlations).</li>
