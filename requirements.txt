@@ -9,4 +9,4 @@ scipy==1.8.0
 seaborn==0.11.2
 sklearn==0.0
 tape-proteins==0.5
-torch==1.11.0
+tensorboard==2.10.1
