@@ -9,14 +9,11 @@ Some code for working with the data is provided in `ProtMIMO/data_utils.py`, whi
 
 You are expected to do the following in 3 hours or less and you may use any resources available to you (except asking someone else for help or finding an existing solution):
 <ol>
-  <li>Load the data as Pandas DataFrames and investigate the columns "primary", "log_fluorescence", and "num_mutations". Create a brief summary of the data by creating histograms of the log fluorescence values and the number of mutations in both the train set and the test set. Do you notice anything interesting?</li>
+  <li>Load the data as Pandas DataFrames and investigate the columns "primary", "log_fluorescence", and "num_mutations". Create a brief summary of the data by creating histograms of the log fluorescence values and the number of mutations in both the train set and the test set. Do you notice anything interesting? You will be predicting log fluoresence from the primary sequence of the proteins in column "primary".</li>
+  <li>As a first pass, implement linear regression to get a baseline value for the metrics of interest: mean-squared error (MSE), Pearson correlation, Spearman Rho, and diversity (which can be measured by looking at residual correlations).</li>
   <li>Implement a MIMO model along with helper modules. We recommend using a MIMO MLP and/or a MIMO CNN (preferably both).</li>
   <li>Implement dataloaders that enable you to train and evaluate the MIMO models.</li>
   <li>Train the MIMO models along with a traditional ensemble of regression models to compare to.</li>
-  <li>Evaluate the MIMO models and the ensembles and compare their performance on metrics such as mean-squared error (MSE), Pearson correlation, Spearman Rho, and diversity (which can be measured by looking at residual correlations).</li>
+  <li>Evaluate the MIMO models and the ensembles and compare their performance on the aforementioned metrics.</li>
   <li>Create visuals such as plots and tables to present your findings. You can put them in the README or in a slide show on Google Drive.</li>
-  <li>(Optional) Implement tests for your modeling code.</li>
-  <li>(Optional) Use importchecker (https://pypi.org/project/importchecker/) and black formatter (https://black.readthedocs.io/en/stable/) to clean up your code.</li>
 </ol>
-
-**Hint**: We recommend first looking at the boilerplate code provided in `ProtMIMO/model.py` and `ProtMIMO/data_utils.py` to get started.
