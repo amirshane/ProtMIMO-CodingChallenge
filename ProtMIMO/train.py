@@ -17,7 +17,9 @@ if __name__ == "__main__":
         train_df, val_df, test_df = get_gfp_dfs()
     except FileNotFoundError:
         if "fluorescence.tar.gz" not in os.listdir():
-            os.system("wget http://s3.amazonaws.com/songlabdata/proteindata/data_pytorch/fluorescence.tar.gz") # Note: This data can also be downloaded by searching the link above in a browser.
+            os.system(
+                "wget http://s3.amazonaws.com/songlabdata/proteindata/data_pytorch/fluorescence.tar.gz"
+            )  # Note: This data can also be downloaded by searching the link above in a browser.
         os.system("tar xzf fluorescence.tar.gz")
         train_df, val_df, test_df = get_gfp_dfs()
 
