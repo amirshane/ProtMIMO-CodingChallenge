@@ -130,3 +130,9 @@ dmypy.json
 
 # Other
 *.DS_Store
+
+# VSCode
+.vscode/
+
+# JetBrains
+.idea/
