@@ -6,8 +6,6 @@ setup(
    description='MIMO for protein function prediction.',
    packages=['ProtMIMO'],  # same as name
    install_requires=[
-    'black==22.1.0',
-    'importchecker==2.0',
     'matplotlib==3.5.1',
     'matplotlib-inline==0.1.3',
     'numpy==1.22.0',

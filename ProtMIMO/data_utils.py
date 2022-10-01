@@ -1,13 +1,6 @@
 """Shared data utils."""
 
-import copy
-from math import ceil
-
-import numpy as np
 import pandas as pd
-import torch
-import torch.nn as nn
-import matplotlib.pyplot as plt
 from tape.datasets import LMDBDataset
 
 
@@ -52,26 +45,3 @@ def get_gfp_dfs():
     val_df = gfp_dataset_to_df("fluorescence/fluorescence_valid.lmdb")
     test_df = gfp_dataset_to_df("fluorescence/fluorescence_test.lmdb")
     return train_df, val_df, test_df
-
-
-def create_batched_train_data():
-    # IMPLEMENT THIS
-    # Batch data for training.
-    pass
-
-
-def create_batched_eval_data(test_df, num_inputs, bs, feature_name):
-    # IMPLEMENT THIS
-    # Batch data for evaluation.
-    pass
-
-
-def create_plot(targets, preds, title, path, feature_name, show_plot=False):
-    plt.figure(figsize=(8, 6))
-    plt.scatter(targets, preds, alpha=0.15)
-    plt.xlabel(f"True {feature_name}")
-    plt.ylabel(f"Predicted {feature_name}")
-    plt.title(title)
-    plt.savefig(path)
-    if show_plot:
-        plt.show()
