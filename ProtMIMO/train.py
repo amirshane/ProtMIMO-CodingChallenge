@@ -1,5 +1,7 @@
 """Training ProtMIMOOracle for Fluorescence data."""
 
+import os
+
 import torch
 
 from model import ProtMIMOOracle
@@ -16,7 +18,7 @@ if __name__ == "__main__":
     try:
         train_df, val_df, test_df = get_gfp_dfs()
     except FileNotFoundError:
-        if "fluorescence.tar.gz" not in os.listdir():
+        if not os.path.exists("fluorescence.tar.gz"):
             os.system(
                 "wget http://s3.amazonaws.com/songlabdata/proteindata/data_pytorch/fluorescence.tar.gz"
             )  # Note: This data can also be downloaded by searching the link above in a browser.
