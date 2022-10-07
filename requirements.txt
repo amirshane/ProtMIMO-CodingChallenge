@@ -1,10 +1,11 @@
 matplotlib==3.5.1
 matplotlib-inline==0.1.3
-numpy==1.22.0
-pandas==1.3.5
-scikit-learn==1.0.2
+numpy==1.22.3
+pandas==1.4.3
+scikit-learn==1.1.1
 scipy==1.8.0
 seaborn==0.11.2
 sklearn==0.0
 tape-proteins==0.5
 tensorboard==2.10.1
+torch==1.12.0
