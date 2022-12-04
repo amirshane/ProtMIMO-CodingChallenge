@@ -16,4 +16,5 @@ We recommend you write clean code that is well-documented, organized, and utiliz
   <li>Train a 3-input 3-output MIMO model along with a traditional ensemble of 3 regression models to compare to.</li>
   <li>Evaluate the MIMO models and the ensembles and compare their performance on the aforementioned metrics.</li>
   <li>Create visuals such as tables of the metrics observed for the different models as well as plots of the predictions vs. the true fluoresence values. You can put these in the README or in a slide show on Google Drive.</li>
+  <li>Estimate the amount of time you spent completing the challenge and include this value in your solution.</li>
 </ol>
